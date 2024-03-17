@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: php_server
+    ports:
+      - "1337:80"
+    volumes:
+      - ./web-1:/var/www/html/
+    restart: on-failure
