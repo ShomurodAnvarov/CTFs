@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  juice_shop:
+    build: .
+    container_name: vulnerable_juice_shop
+    ports:
+      - "8080:80"
+    volumes:
+      - ./apps:/var/www/html
+      - ./init:/root/init
+    restart: on-failure
