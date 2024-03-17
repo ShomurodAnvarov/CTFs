@@ -1,4 +1,4 @@
-The application was taken from this repo
+The application was taken from vulnhub repo
 
 docker-compose.yml
 ```yaml
